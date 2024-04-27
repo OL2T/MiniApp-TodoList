@@ -1,0 +1,28 @@
+.hidden {
+  display: none !important;
+}
+
+.groupContainer {
+  width: 100%;
+  flex: 0 0 calc(100% - 38px);
+}
+
+.taskInputContainer {
+  margin-bottom: 24px;
+}
+
+.formTaskIput {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+}
+
+.iconAdd {
+  border-radius: 4px;
+  background-color: #fff;
+  width: 30px;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

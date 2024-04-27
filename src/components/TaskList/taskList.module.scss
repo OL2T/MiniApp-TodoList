@@ -1,0 +1,53 @@
+.taskItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 16px;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.taskItemTitle {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  flex: 0 0 calc(100% - 84px);
+  max-width: calc(100% - 84px);
+  word-break: break-word;
+  input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  label {
+    font-size: 16px;
+  }
+}
+.taskName {
+  color: #000;
+  font-weight: 600;
+  &.taskNameDone {
+    text-decoration: line-through;
+    color: #555;
+  }
+}
+
+.actionsGroup {
+  display: flex;
+  column-gap: 8px;
+  flex: 0 0 calc(76px - 8px);
+  max-width: calc(76px - 8px);
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+}
